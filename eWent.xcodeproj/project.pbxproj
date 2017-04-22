@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		B6E9B8C81EAA0F7F00013891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8C71EAA0F7F00013891 /* main.m */; };
 		B6E9B8CB1EAA0F7F00013891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8CA1EAA0F7F00013891 /* AppDelegate.m */; };
-		B6E9B8CE1EAA0F7F00013891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8CD1EAA0F7F00013891 /* ViewController.m */; };
 		B6E9B8D11EAA0F7F00013891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E9B8CF1EAA0F7F00013891 /* Main.storyboard */; };
 		B6E9B8D41EAA0F7F00013891 /* eWent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8D21EAA0F7F00013891 /* eWent.xcdatamodeld */; };
-		B6E9B8D61EAA0F7F00013891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E9B8D51EAA0F7F00013891 /* Assets.xcassets */; };
 		B6E9B8D91EAA0F7F00013891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E9B8D71EAA0F7F00013891 /* LaunchScreen.storyboard */; };
+		B6E9B8E11EAA1BE000013891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E9B8E01EAA1BE000013891 /* Assets.xcassets */; };
+		B6E9B8E41EAA82D900013891 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */; };
+		B6E9B8E81EAA838C00013891 /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */; };
+		B6E9B8EF1EAB834600013891 /* SplashScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8EE1EAB834600013891 /* SplashScreenController.m */; };
+		B6E9B8F21EAB855600013891 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8F11EAB855600013891 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +24,19 @@
 		B6E9B8C71EAA0F7F00013891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6E9B8C91EAA0F7F00013891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6E9B8CA1EAA0F7F00013891 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B6E9B8CC1EAA0F7F00013891 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B6E9B8CD1EAA0F7F00013891 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B6E9B8D01EAA0F7F00013891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6E9B8D31EAA0F7F00013891 /* eWent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eWent.xcdatamodel; sourceTree = "<group>"; };
-		B6E9B8D51EAA0F7F00013891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E9B8D81EAA0F7F00013891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E9B8DA1EAA0F7F00013891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E9B8E01EAA1BE000013891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6E9B8E21EAA82D900013891 /* EventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsTableViewController.h; path = Controllers/EventsTableViewController.h; sourceTree = "<group>"; };
+		B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsTableViewController.m; path = Controllers/EventsTableViewController.m; sourceTree = "<group>"; };
+		B6E9B8E61EAA838C00013891 /* EventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsTableViewCell.h; path = Controllers/TableViewCells/EventsTableViewCell.h; sourceTree = "<group>"; };
+		B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsTableViewCell.m; path = Controllers/TableViewCells/EventsTableViewCell.m; sourceTree = "<group>"; };
+		B6E9B8ED1EAB834600013891 /* SplashScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScreenController.h; path = Controllers/SplashScreenController.h; sourceTree = "<group>"; };
+		B6E9B8EE1EAB834600013891 /* SplashScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashScreenController.m; path = Controllers/SplashScreenController.m; sourceTree = "<group>"; };
+		B6E9B8F01EAB855600013891 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Model/Event.h; sourceTree = "<group>"; };
+		B6E9B8F11EAB855600013891 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Model/Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +69,13 @@
 		B6E9B8C51EAA0F7F00013891 /* eWent */ = {
 			isa = PBXGroup;
 			children = (
+				B6E9B8E51EAA82EA00013891 /* Controllers */,
+				B6E9B8EA1EAB816600013891 /* Model */,
 				B6E9B8C91EAA0F7F00013891 /* AppDelegate.h */,
 				B6E9B8CA1EAA0F7F00013891 /* AppDelegate.m */,
-				B6E9B8CC1EAA0F7F00013891 /* ViewController.h */,
-				B6E9B8CD1EAA0F7F00013891 /* ViewController.m */,
-				B6E9B8CF1EAA0F7F00013891 /* Main.storyboard */,
-				B6E9B8D51EAA0F7F00013891 /* Assets.xcassets */,
-				B6E9B8D71EAA0F7F00013891 /* LaunchScreen.storyboard */,
 				B6E9B8DA1EAA0F7F00013891 /* Info.plist */,
-				B6E9B8D21EAA0F7F00013891 /* eWent.xcdatamodeld */,
+				B6E9B8EB1EAB81BC00013891 /* Storyboards */,
+				B6E9B8EC1EAB824C00013891 /* Resourses */,
 				B6E9B8C61EAA0F7F00013891 /* Supporting Files */,
 			);
 			path = eWent;
@@ -80,6 +87,54 @@
 				B6E9B8C71EAA0F7F00013891 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6E9B8E51EAA82EA00013891 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9B8E91EAA839300013891 /* TableViewCells */,
+				B6E9B8ED1EAB834600013891 /* SplashScreenController.h */,
+				B6E9B8EE1EAB834600013891 /* SplashScreenController.m */,
+				B6E9B8E21EAA82D900013891 /* EventsTableViewController.h */,
+				B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B6E9B8E91EAA839300013891 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9B8E61EAA838C00013891 /* EventsTableViewCell.h */,
+				B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B6E9B8EA1EAB816600013891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9B8F01EAB855600013891 /* Event.h */,
+				B6E9B8F11EAB855600013891 /* Event.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6E9B8EB1EAB81BC00013891 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9B8CF1EAA0F7F00013891 /* Main.storyboard */,
+				B6E9B8D71EAA0F7F00013891 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6E9B8EC1EAB824C00013891 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B6E9B8D21EAA0F7F00013891 /* eWent.xcdatamodeld */,
+				B6E9B8E01EAA1BE000013891 /* Assets.xcassets */,
+			);
+			name = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E9B8D91EAA0F7F00013891 /* LaunchScreen.storyboard in Resources */,
-				B6E9B8D61EAA0F7F00013891 /* Assets.xcassets in Resources */,
+				B6E9B8E11EAA1BE000013891 /* Assets.xcassets in Resources */,
 				B6E9B8D11EAA0F7F00013891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,10 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E9B8CE1EAA0F7F00013891 /* ViewController.m in Sources */,
 				B6E9B8D41EAA0F7F00013891 /* eWent.xcdatamodeld in Sources */,
+				B6E9B8E81EAA838C00013891 /* EventsTableViewCell.m in Sources */,
 				B6E9B8CB1EAA0F7F00013891 /* AppDelegate.m in Sources */,
+				B6E9B8E41EAA82D900013891 /* EventsTableViewController.m in Sources */,
 				B6E9B8C81EAA0F7F00013891 /* main.m in Sources */,
+				B6E9B8EF1EAB834600013891 /* SplashScreenController.m in Sources */,
+				B6E9B8F21EAB855600013891 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +338,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sandra.eWent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,6 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sandra.eWent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -314,6 +374,7 @@
 				B6E9B8DF1EAA0F7F00013891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

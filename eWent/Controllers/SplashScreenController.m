@@ -6,13 +6,14 @@
 //  Copyright © 2017 Aleksandra. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SplashScreenController.h"
 
-@interface ViewController ()
+@interface SplashScreenController ()
+
 
 @end
 
-@implementation ViewController
+@implementation SplashScreenController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,4 +27,7 @@
 }
 
 
+- (IBAction)showTabs:(id)sender {
+    
+}
 @end
