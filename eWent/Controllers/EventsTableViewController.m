@@ -27,7 +27,7 @@
     [super viewDidLoad];
     
     //loadingData
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(wer) name:@"loadingData" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self.tableView selector:@selector(reloadData) name:@"loadingData" object:nil];
     
     self.eventDataController = [[EventDataController alloc] init];
    
@@ -38,11 +38,6 @@
     
     ApiClient *api = [[ApiClient alloc] init];
     [api fetchDataWithParams:nil];
-}
-
-//TODO: rename or do smth with it
--(void)wer {
-    [self.tableView reloadData];
 }
 
 - (void)awakeFromNib {
@@ -64,8 +59,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
    
-    NSLog(@"counting numberOfRows in table");
-    return self.eventDataController.eventList.count;
+    NSInteger countOfRows = self.eventDataController.eventList.count;
+    NSLog(@"counting numberOfRows in table - %d", countOfRows);
+    return countOfRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

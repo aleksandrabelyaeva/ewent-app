@@ -17,13 +17,12 @@
 
 @implementation ApiClient
 
-- (NSArray *)loadEventsWithParams:(NSDictionary *)params {
+- (void)loadEventsWithParams:(NSDictionary *)params {
     
     [self fetchDataWithParams:@{@"city" : @"dnepr"}];
 //    [self fetchDataWithParams:params];
     
     NSLog(@"array of events in api client %@",self.arrayOfEvents);
-    return self.arrayOfEvents;
     
 }
 
@@ -54,6 +53,9 @@
                 NSLog(@"Success!");
 //                NSLog(@"responeObject %@",responseObject);
                 [self deserializationResponse:responseObject];
+                
+                //отправляется нотификация
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"uploadInfo" object:nil];
             }
             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 NSLog(@"Error: %@", error);
@@ -86,7 +88,7 @@
     NSArray *arrayOfEvents = [responseData objectForKey:@"hits"];
     
     self.arrayOfEvents = [arrayOfEvents copy];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"uploadInfo" object:nil];
+    
     NSLog(@"api client self.arrayOfEvents = %@",self.arrayOfEvents);
 }
 @end
