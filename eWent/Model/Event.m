@@ -8,18 +8,29 @@
 
 #import "Event.h"
 
-@interface Event ()
-
-
-@property (nullable, nonatomic) NSString *eventDescription;
-@property (nullable, nonatomic) NSString *city;
-
-@property (nullable, nonatomic) NSString *category;
-@property (nullable, nonatomic) NSString *startDate;
-
-@end
-
 @implementation Event
 
+-(instancetype)initWithName:(NSString *)name
+         coverURL:(NSString *)coverURL
+             date:(NSString *)date
+            place:(NSString *)place
+             link:(NSString *)link
+          summary:(NSString *)summary {
+    
+    self = [super init];
+    
+    if (self) {
+        _name = name;
+        _coverURL = coverURL;
+        _date = date;
+        _place = place;
+        _link = link;
+        _summary = summary;
+        
+        return self;
+    }
+    
+    return nil;
+}
 
 @end

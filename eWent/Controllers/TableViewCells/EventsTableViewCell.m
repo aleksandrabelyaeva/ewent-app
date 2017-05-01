@@ -31,9 +31,9 @@
 - (void) configureCellWithEvent:(Event *)event {
     self.eventNameLabel.text = event.name;
     
-    NSData *imageData = [NSData dataWithContentsOfURL:event.coverURL];
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:event.coverURL]];
     self.eventCover.image = [UIImage imageWithData:imageData];
-    //    weakSelf ... scale:1.0];
+//        weakSelf ... scale:1.0];
 }
 
 @end
