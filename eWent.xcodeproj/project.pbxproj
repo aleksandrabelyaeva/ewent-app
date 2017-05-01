@@ -20,12 +20,9 @@
 		B6E9B8E41EAA82D900013891 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */; };
 		B6E9B8E81EAA838C00013891 /* EventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */; };
 		B6E9B8F21EAB855600013891 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8F11EAB855600013891 /* Event.m */; };
-		F684B7145269345EC659EF34 /* Pods_eWent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2989542A3677066F9C35CC90 /* Pods_eWent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		277EF64E315565AC6C7AA169 /* Pods-eWent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWent.release.xcconfig"; path = "Pods/Target Support Files/Pods-eWent/Pods-eWent.release.xcconfig"; sourceTree = "<group>"; };
-		2989542A3677066F9C35CC90 /* Pods_eWent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60B87E11EB0D233003E8CEA /* eWent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eWent.xcdatamodel; sourceTree = "<group>"; };
 		B6395E871EAE06CE00D2A00C /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailViewController.h; path = Controllers/EventDetailViewController.h; sourceTree = "<group>"; };
 		B6395E881EAE06CE00D2A00C /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDetailViewController.m; path = Controllers/EventDetailViewController.m; sourceTree = "<group>"; };
@@ -48,7 +45,6 @@
 		B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsTableViewCell.m; path = Controllers/TableViewCells/EventsTableViewCell.m; sourceTree = "<group>"; };
 		B6E9B8F01EAB855600013891 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Model/Event.h; sourceTree = "<group>"; };
 		B6E9B8F11EAB855600013891 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Model/Event.m; sourceTree = "<group>"; };
-		E9BBA6F8ACC847E09F9CC357 /* Pods-eWent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eWent/Pods-eWent.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,30 +52,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F684B7145269345EC659EF34 /* Pods_eWent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D79236AFB70E4ABD7D646D1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E9BBA6F8ACC847E09F9CC357 /* Pods-eWent.debug.xcconfig */,
-				277EF64E315565AC6C7AA169 /* Pods-eWent.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		43E8DC8FEBE55ABF50CE41E3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2989542A3677066F9C35CC90 /* Pods_eWent.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B66FAD7E1EAE212D0074B4B3 /* DataControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +81,6 @@
 			children = (
 				B6E9B8C51EAA0F7F00013891 /* eWent */,
 				B6E9B8C41EAA0F7F00013891 /* Products */,
-				0D79236AFB70E4ABD7D646D1 /* Pods */,
-				43E8DC8FEBE55ABF50CE41E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,12 +173,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6E9B8DD1EAA0F7F00013891 /* Build configuration list for PBXNativeTarget "eWent" */;
 			buildPhases = (
-				73FB680834D06AF16F980826 /* [CP] Check Pods Manifest.lock */,
 				B6E9B8BF1EAA0F7F00013891 /* Sources */,
 				B6E9B8C01EAA0F7F00013891 /* Frameworks */,
 				B6E9B8C11EAA0F7F00013891 /* Resources */,
-				E9A2B05A250B04BDD41BF40A /* [CP] Embed Pods Frameworks */,
-				5F4A3CBD1F79774E61A53758 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,54 +234,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5F4A3CBD1F79774E61A53758 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eWent/Pods-eWent-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73FB680834D06AF16F980826 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E9A2B05A250B04BDD41BF40A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eWent/Pods-eWent-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6E9B8BF1EAA0F7F00013891 /* Sources */ = {
@@ -439,7 +364,6 @@
 		};
 		B6E9B8DE1EAA0F7F00013891 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BBA6F8ACC847E09F9CC357 /* Pods-eWent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -457,7 +381,6 @@
 		};
 		B6E9B8DF1EAA0F7F00013891 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277EF64E315565AC6C7AA169 /* Pods-eWent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

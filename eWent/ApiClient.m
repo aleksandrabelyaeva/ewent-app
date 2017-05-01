@@ -9,7 +9,7 @@
 #import "ApiClient.h"
 #import "Event.h"
 
-#import <AFNetworking/AFNetworking.h>
+
 
 @interface ApiClient()
 
@@ -29,28 +29,36 @@
     
 }
 
-
+static NSString *ulrString = @"";
 - (void)fetchDataWithParams:(NSDictionary *)params {
     
-    NSURLSessionConfiguration *baseConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFHTTPSessionManager *managerGET = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:baseConfiguration];
+    NSURL *url = [[NSURL alloc] initWithString:ulrString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPMethod:@"POST"];
     
-    managerGET.requestSerializer = [AFJSONRequestSerializer serializer];
-    managerGET.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+    [request setHTTPBody:postData];
     
-    [managerGET.requestSerializer setValue:@"text/json" forHTTPHeaderField:@"Content-Type"];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     
-    [managerGET GET:@"http://46.98.117.46:8080/getewent2"
-         parameters:params
-           progress:^(NSProgress * _Nonnull downloadProgress) {}
-            success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                NSLog(@"Success!");
-                [self deserializationResponse:responseObject];
+        NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    
+            if (data) {
+                NSLog(@"RESPONSE: %@",response);
+                NSDictionary* dictr = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                NSLog(@"DATA: %@",dictr);
+                NSLog(@"ERROR: %@",error);
+    
+            } else {
+    
             }
-            failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                NSLog(@"Error: %@", error);
-            }
-     ];
+        }];
+        [postDataTask resume];
+    
+    
+
 }
 
 - (void)deserializationResponse:(id)responseData {
