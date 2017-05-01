@@ -10,6 +10,12 @@
 
 @interface ApiClient : NSObject
 
-- (NSArray *)loadEventsWithParams:(NSDictionary *)params;
+@property (nonatomic, strong) NSArray *arrayOfEvents;
+
+
+- (void)loadEventsWithParams:(NSDictionary *)params;
+- (void)fetchDataWithParams:(NSDictionary *)params;
+
+
 
 @end

@@ -13,6 +13,8 @@
 #import "EventDataController.h"
 #import "EventDetailViewController.h"
 
+#import "ApiClient.h"
+
 @interface EventsTableViewController ()
 
 @property (nonatomic, strong) EventDataController *eventDataController;
@@ -33,7 +35,9 @@
     if (self.eventDataController.eventList) {
         NSLog(@"init eventlist");
     }
-
+    
+    ApiClient *api = [[ApiClient alloc] init];
+    [api fetchDataWithParams:nil];
 }
 
 //TODO: rename or do smth with it

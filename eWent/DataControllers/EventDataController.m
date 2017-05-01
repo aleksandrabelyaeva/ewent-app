@@ -28,7 +28,7 @@
         _apiClient = [ApiClient new];
         _eventList = [[NSArray alloc] init];
         [self loadingEvents];
-        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateEvents) name:@"uploadInfo" object:nil];
         NSLog(@"event list in data contr - %@",self.eventList);
         
         return self;
@@ -37,19 +37,15 @@
     return nil;
 }
 
--(void)setEventList:(NSArray *)eventList {
-    _eventList = eventList;
+- (void)updateEvents {
+    self.eventList = self.apiClient.arrayOfEvents;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadingData" object:nil];
-    NSLog(@"setercount %lu",(unsigned long)eventList.count);
 }
 
 - (void)loadingEvents {
     
    // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadingEvents) name:@"hip" object:nil];
-    
-    self.eventList = [self.apiClient loadEventsWithParams:nil];
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"loadingData" object:nil];
+    [self.apiClient loadEventsWithParams:nil];
     NSLog(@"events list - %@",self.eventList);
     NSLog(@"events list count - %lu",(unsigned long)self.eventList.count);
 }
