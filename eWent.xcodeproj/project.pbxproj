@@ -14,6 +14,7 @@
 		B66FAD801EAE3CD30074B4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66FAD7F1EAE3CD30074B4B3 /* Assets.xcassets */; };
 		B66FAD8A1EAE4D140074B4B3 /* EventsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66FAD891EAE4D140074B4B3 /* EventsList.plist */; };
 		B6AB39551EB6301500A02320 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB39541EB6301500A02320 /* ApiClient.m */; };
+		B6D153B01EB7A3E100E5DAB5 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D153AF1EB7A3E100E5DAB5 /* TabBarController.m */; };
 		B6E9B8C81EAA0F7F00013891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8C71EAA0F7F00013891 /* main.m */; };
 		B6E9B8CB1EAA0F7F00013891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B8CA1EAA0F7F00013891 /* AppDelegate.m */; };
 		B6E9B8D11EAA0F7F00013891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E9B8CF1EAA0F7F00013891 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 		B66FAD891EAE4D140074B4B3 /* EventsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventsList.plist; sourceTree = "<group>"; };
 		B6AB39531EB6301500A02320 /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
 		B6AB39541EB6301500A02320 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
+		B6D153AE1EB7A3E100E5DAB5 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Controllers/TabBarController.h; sourceTree = "<group>"; };
+		B6D153AF1EB7A3E100E5DAB5 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = Controllers/TabBarController.m; sourceTree = "<group>"; };
 		B6E9B8C31EAA0F7F00013891 /* eWent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eWent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E9B8C71EAA0F7F00013891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6E9B8C91EAA0F7F00013891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */,
 				B6395E871EAE06CE00D2A00C /* EventDetailViewController.h */,
 				B6395E881EAE06CE00D2A00C /* EventDetailViewController.m */,
+				B6D153AE1EB7A3E100E5DAB5 /* TabBarController.h */,
+				B6D153AF1EB7A3E100E5DAB5 /* TabBarController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				B6E9B8CB1EAA0F7F00013891 /* AppDelegate.m in Sources */,
 				B6E9B8E41EAA82D900013891 /* EventsTableViewController.m in Sources */,
 				B60B87E21EB0D233003E8CEA /* eWent.xcdatamodeld in Sources */,
+				B6D153B01EB7A3E100E5DAB5 /* TabBarController.m in Sources */,
 				B6E9B8C81EAA0F7F00013891 /* main.m in Sources */,
 				B6E9B8F21EAB855600013891 /* Event.m in Sources */,
 			);
@@ -367,6 +373,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -414,6 +421,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

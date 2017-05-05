@@ -43,11 +43,11 @@
                                 <rect key="frame" x="0.0" y="475" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DlD-ih-xwy" id="UqD-V4-WNu">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Terms of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tyF-L8-3Pj">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.21211671829223633" green="0.96275466680526733" blue="0.18343877792358398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -305,11 +305,11 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qpY-g1-SOd">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qpY-g1-SOd">
                                         <rect key="frame" x="0.0" y="212" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpY-g1-SOd" id="J0g-Gr-Mwe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9J-3G-V5v">
@@ -327,11 +327,11 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qGa-vf-789">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qGa-vf-789">
                                         <rect key="frame" x="0.0" y="256" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qGa-vf-789" id="e5m-IE-Fu8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-8Y-1zf">
@@ -398,14 +398,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cell" destination="qGa-vf-789" id="9hr-Yb-Z4p"/>
                         <outlet property="eventCoverImageView" destination="pE6-dA-tw0" id="7wC-ej-N3L"/>
                         <outlet property="eventDateLabel" destination="B9J-3G-V5v" id="gFy-Uf-zDx"/>
                         <outlet property="eventDescriptionTextView" destination="Kym-6a-bTF" id="Mc8-dL-Aey"/>
                         <outlet property="eventLinkLabel" destination="5fT-lK-BbX" id="hPA-NK-l1W"/>
                         <outlet property="eventNameLabel" destination="inz-5F-aSw" id="Elw-QD-Fsl"/>
                         <outlet property="eventPlaceLabel" destination="yJh-8Y-1zf" id="vcq-eL-TTi"/>
-                        <outlet property="tb" destination="rzy-lT-grF" id="n0z-tI-5D5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9My-EC-I52" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,7 +443,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6ON-h1-eIh">
             <objects>
-                <tabBarController id="J9r-yX-OhS" sceneMemberID="viewController">
+                <tabBarController id="J9r-yX-OhS" customClass="TabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="21E-pa-3hU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -455,6 +453,8 @@
                         <segue destination="5IC-uA-09y" kind="relationship" relationship="viewControllers" id="xnF-Uf-oYj"/>
                         <segue destination="RLV-17-KJE" kind="relationship" relationship="viewControllers" id="shV-dC-Pwh"/>
                         <segue destination="lqQ-SK-H5o" kind="relationship" relationship="viewControllers" id="2PH-Ni-Sdr"/>
+                        <segue destination="5IC-uA-09y" kind="show" identifier="showEvents" id="0Dh-xh-VQL"/>
+                        <segue destination="RLV-17-KJE" kind="show" identifier="showFavorites" id="CYK-FB-5j3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcl-Mm-0RD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -587,6 +587,8 @@
         <image name="icon_settings" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="0Dh-xh-VQL"/>
+        <segue reference="CYK-FB-5j3"/>
         <segue reference="vF1-AX-noL"/>
         <segue reference="Sog-5C-dpb"/>
     </inferredMetricsTieBreakers>
