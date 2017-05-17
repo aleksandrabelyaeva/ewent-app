@@ -58,17 +58,22 @@
    
     NSInteger countOfRows = self.eventDataController.eventList.count;
     NSLog(@"counting numberOfRows in table - %d", countOfRows);
-    return countOfRows;
+    
+    return 7;
+//    return countOfRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     EventsTableViewCell *cell = (EventsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"eventCell" forIndexPath:indexPath];
     
-    Event *event = [self.eventDataController eventAtIndex:indexPath.row];
-    
-    [cell configureCellWithEvent:event];
-    
+    if (self.tabBarController.selectedIndex == 1) {
+        Event *event = [self.eventDataController eventAtIndex:indexPath.row];
+        
+        [cell configureCellWithEvent:event];
+        
+        return cell;
+    }
     return cell;
 }
 

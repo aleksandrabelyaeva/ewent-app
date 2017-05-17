@@ -49,8 +49,10 @@
 //  [managerGET GET:@"http://46.98.117.46:8080/getewent2"
   
 //  at Hillel
-    [managerGET GET:@"http://192.168.2.47:8080/getewent2"
-     
+//    [managerGET GET:@"http://192.168.2.47:8080/getewent2"
+    
+//    at CoffeeLife
+    [managerGET GET:@"http://172.17.46.187:8080/getewent2"
 //  Pixabay
 //  [managerGET GET:@"https://pixabay.com/api/"
 //       parameters:paramsPixabay
