@@ -35,6 +35,7 @@
     if (self.eventDataController.eventList) {
         NSLog(@"init eventlist");
     }
+    
 }
 
 - (void)awakeFromNib {
