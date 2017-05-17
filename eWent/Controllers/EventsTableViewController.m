@@ -36,8 +36,6 @@
         NSLog(@"init eventlist");
     }
     
-    ApiClient *api = [[ApiClient alloc] init];
-    [api fetchDataWithParams:nil];
 }
 
 - (void)awakeFromNib {
