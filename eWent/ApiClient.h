@@ -14,8 +14,5 @@
 
 
 - (void)loadEventsWithParams:(NSDictionary *)params;
-- (void)fetchDataWithParams:(NSDictionary *)params;
-
-
 
 @end

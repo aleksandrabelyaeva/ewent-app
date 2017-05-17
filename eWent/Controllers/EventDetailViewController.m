@@ -50,6 +50,13 @@
         NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.detailItem.coverURL]];
         self.eventCoverImageView.image = [UIImage imageWithData:imageData];
         
+//        self.eventNameLabel.text = @"name";
+//        self.eventDateLabel.text = @"date";
+//        self.eventPlaceLabel.text = @"place";
+//        self.eventLinkLabel.text = @"link";
+//        self.eventDescriptionTextView.text = @"summary";
+        
+        
     }
 }
 

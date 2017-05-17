@@ -47,6 +47,7 @@
 
 - (void)loadingEvents {
     
+    NSLog(@"loadingEvents in data contr");
     [self.apiClient loadEventsWithParams:nil];
     NSLog(@"events list - %@",self.eventList);
     NSLog(@"events list count - %lu",(unsigned long)self.eventList.count);

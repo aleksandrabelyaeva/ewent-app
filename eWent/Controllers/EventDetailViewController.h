@@ -13,9 +13,8 @@
 @interface EventDetailViewController : UITableViewController
 
 @property (strong, nonatomic) Event *detailItem;
-@property (strong, nonatomic) IBOutlet UITableView *tb;
 
-@property (weak, nonatomic) IBOutlet UITableViewCell *cell;
+
 @property (weak, nonatomic) IBOutlet UILabel *eventNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *eventCoverImageView;
 @property (weak, nonatomic) IBOutlet UILabel *eventDateLabel;

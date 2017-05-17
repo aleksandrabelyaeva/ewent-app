@@ -47,11 +47,13 @@
            progress:^(NSProgress * _Nonnull downloadProgress) {}
             success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 NSLog(@"Success!");
-//                NSLog(@"responeObject %@",responseObject);
+                NSLog(@"responeObject %@",responseObject);
                 [self deserializationResponse:responseObject];
                 
                 //отправляется нотификация
+                NSLog(@"Push notification <upload info>");
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"uploadInfo" object:nil];
+                
             }
             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 NSLog(@"Error: %@", error);

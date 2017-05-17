@@ -20,10 +20,4 @@
 
 - (void)loadingEvents;
 
-//- (void)addEventWithName:(NSString *)name
-//                coverURL:(NSString *)coverURL
-//                    date:(NSString *)date
-//                    place:(NSString *)place
-//                     link:(NSString *)link
-//                  summary:(NSString *)summary;
 @end
