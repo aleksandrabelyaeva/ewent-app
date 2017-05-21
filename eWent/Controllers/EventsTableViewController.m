@@ -35,7 +35,6 @@
     if (self.eventDataController.eventList) {
         NSLog(@"init eventlist");
     }
-    
 }
 
 - (void)awakeFromNib {
@@ -60,6 +59,8 @@
     NSInteger countOfRows = self.eventDataController.eventList.count;
     NSLog(@"counting numberOfRows in table - %d", countOfRows);
     
+//ToDo: remove this
+//    if server do not response
     return 7;
 //    return countOfRows;
 }

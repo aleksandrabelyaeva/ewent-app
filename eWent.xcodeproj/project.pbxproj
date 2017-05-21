@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B202063F04AF3227A9C5DEE /* Pods_eWent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB6429E0EA34B2954B6F975 /* Pods_eWent.framework */; };
-		84AB2DAC1EBCE8580018828D /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB2DAB1EBCE8580018828D /* FiltersViewController.m */; };
+		84CBEC981ECCBBAB006D22CB /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBEC971ECCBBAB006D22CB /* FiltersViewController.m */; };
+		84CBEC9E1ECCBF3E006D22CB /* FiltersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBEC9D1ECCBF3E006D22CB /* FiltersTableViewCell.m */; };
 		B60B87E21EB0D233003E8CEA /* eWent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B60B87E01EB0D233003E8CEA /* eWent.xcdatamodeld */; };
 		B6395E891EAE06CE00D2A00C /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6395E881EAE06CE00D2A00C /* EventDetailViewController.m */; };
 		B66FAD7D1EAE21270074B4B3 /* EventDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66FAD7C1EAE21270074B4B3 /* EventDataController.m */; };
@@ -28,8 +29,10 @@
 /* Begin PBXFileReference section */
 		4BB6429E0EA34B2954B6F975 /* Pods_eWent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eWent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E49271BC161B240206AF06 /* Pods-eWent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eWent/Pods-eWent.debug.xcconfig"; sourceTree = "<group>"; };
-		84AB2DAA1EBCE8580018828D /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
-		84AB2DAB1EBCE8580018828D /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		84CBEC961ECCBBAB006D22CB /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FiltersViewController.h; path = Controllers/FiltersViewController.h; sourceTree = "<group>"; };
+		84CBEC971ECCBBAB006D22CB /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FiltersViewController.m; path = Controllers/FiltersViewController.m; sourceTree = "<group>"; };
+		84CBEC9C1ECCBF3E006D22CB /* FiltersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersTableViewCell.h; sourceTree = "<group>"; };
+		84CBEC9D1ECCBF3E006D22CB /* FiltersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersTableViewCell.m; sourceTree = "<group>"; };
 		9A96CFB50B433D7D3D34E66E /* Pods-eWent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eWent.release.xcconfig"; path = "Pods/Target Support Files/Pods-eWent/Pods-eWent.release.xcconfig"; sourceTree = "<group>"; };
 		B60B87E11EB0D233003E8CEA /* eWent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eWent.xcdatamodel; sourceTree = "<group>"; };
 		B6395E871EAE06CE00D2A00C /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailViewController.h; path = Controllers/EventDetailViewController.h; sourceTree = "<group>"; };
@@ -156,8 +159,10 @@
 				B6E9B8E31EAA82D900013891 /* EventsTableViewController.m */,
 				B6395E871EAE06CE00D2A00C /* EventDetailViewController.h */,
 				B6395E881EAE06CE00D2A00C /* EventDetailViewController.m */,
-				84AB2DAA1EBCE8580018828D /* FiltersViewController.h */,
-				84AB2DAB1EBCE8580018828D /* FiltersViewController.m */,
+				B6D153AE1EB7A3E100E5DAB5 /* TabBarController.h */,
+				B6D153AF1EB7A3E100E5DAB5 /* TabBarController.m */,
+				84CBEC961ECCBBAB006D22CB /* FiltersViewController.h */,
+				84CBEC971ECCBBAB006D22CB /* FiltersViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -167,6 +172,8 @@
 			children = (
 				B6E9B8E61EAA838C00013891 /* EventsTableViewCell.h */,
 				B6E9B8E71EAA838C00013891 /* EventsTableViewCell.m */,
+				84CBEC9C1ECCBF3E006D22CB /* FiltersTableViewCell.h */,
+				84CBEC9D1ECCBF3E006D22CB /* FiltersTableViewCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -328,11 +335,12 @@
 				B6395E891EAE06CE00D2A00C /* EventDetailViewController.m in Sources */,
 				B6AB39551EB6301500A02320 /* ApiClient.m in Sources */,
 				B6E9B8CB1EAA0F7F00013891 /* AppDelegate.m in Sources */,
+				84CBEC9E1ECCBF3E006D22CB /* FiltersTableViewCell.m in Sources */,
+				84CBEC981ECCBBAB006D22CB /* FiltersViewController.m in Sources */,
 				B6E9B8E41EAA82D900013891 /* EventsTableViewController.m in Sources */,
 				B60B87E21EB0D233003E8CEA /* eWent.xcdatamodeld in Sources */,
 				B6D153B01EB7A3E100E5DAB5 /* TabBarController.m in Sources */,
 				B6E9B8C81EAA0F7F00013891 /* main.m in Sources */,
-				84AB2DAC1EBCE8580018828D /* FiltersViewController.m in Sources */,
 				B6E9B8F21EAB855600013891 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

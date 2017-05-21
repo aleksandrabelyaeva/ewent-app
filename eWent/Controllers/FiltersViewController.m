@@ -9,6 +9,7 @@
 #import "FiltersViewController.h"
 
 @interface FiltersViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong,nonatomic) NSMutableArray *filters;
 @end
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-  //  self.tabBarController.tabBar.hidden = YES;
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
+    self.tabBarController.tabBar.hidden = YES;
     // Do any additional setup after loading the view.
 }
 
@@ -93,11 +97,14 @@
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
     return cell;
+    return nil;
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [[NSUserDefaults standardUserDefaults] setObject:[self.filters copy] forKey:@"filters"];
+    
+    self.tabBarController.tabBar.hidden = NO;
 }
 /*
 #pragma mark - Navigation
